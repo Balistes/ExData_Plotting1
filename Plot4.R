@@ -50,5 +50,5 @@ with(workset,plot(workset$Time, workset$Global_reactive_power,
                   type="l", xlab="datetime", ylab="Global_reactive_power"))
 
 # copy graph to png file
-#dev.copy(png,file = "plot4.png", width=480, height= 480)
+dev.copy(png,file = "plot4.png", width=480, height= 480)
 dev.off()
