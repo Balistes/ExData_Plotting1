@@ -1,13 +1,14 @@
 # install packages, if it is needed
 if(!is.element("datasets", installed.packages()[,1])) {
   install.packages("datasets")
-  library(datasets)  
 }
+library(datasets) 
 
 if(!is.element("readr", installed.packages()[,1])) {
   install.packages("readr")
-  library(readr)
+
 }
+library(readr)
 
 # create directory for dataset, load and read file, create dataset (if data is missing)
 if( !file.exists("./data")) {
